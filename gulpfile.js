@@ -73,7 +73,7 @@ gulp.task('icons', function () {
 
 //Переносим и сжимаем изображения из папки img в dist
 gulp.task('img', function () {
-    return gulp.src("src/img/**/*.+(svg|png)")
+    return gulp.src("src/img/**/*.+(svg|png|jpg)")
         // .pipe(imagemin())
         .pipe(gulp.dest("dist/img"))
         .pipe(browserSync.stream());

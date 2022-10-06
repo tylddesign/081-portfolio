@@ -1,0 +1,24 @@
+.promo {
+    height: 100vh;
+    padding-top: 200px;
+    background: url("../img/1-section/Background.jpg") no-repeat (center/cover);
+    // z-index: -3;
+    &__title {
+        margin-top: 8px;
+        margin-bottom: 25px;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 60px;
+        color: #000000;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 10px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        z-index: 2;
+        @include before_circle;
+    }
+}

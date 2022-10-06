@@ -1,8 +1,20 @@
 @import "libs/bootstrap-reboot.min";
 @import "libs/fonts";
 
+@import "base/variables";
+@import "base/mixins";
+
+@import "blocks/promo";
+@import "blocks/buttons";
+@import "blocks/sidebar";
+
 * {
-    font-family: "Museo Sans Cyrl";
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
 }

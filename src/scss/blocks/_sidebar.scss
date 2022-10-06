@@ -1,0 +1,35 @@
+.sidebar {
+    position: absolute;
+    top: 226px;
+    left: 50px;
+    // height: 338px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 338px;
+    }
+    a {
+        display: block;
+    }
+    &__divider {
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+    }
+    &__descr {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        height: 148px;
+        width: 25px;
+        color: #000000;
+        span {
+            display: block;
+            transform: rotate(-90deg) translate(-58px, -61px);
+            width: 148px;
+            height: 25px;
+        }
+    }
+}
