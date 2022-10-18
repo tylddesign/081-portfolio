@@ -12,6 +12,13 @@
     }
     a {
         display: block;
+        img {
+            &:hover {
+                svg path {
+                    fill: red;
+                }
+            }
+        }
     }
     &__divider {
         width: 2px;
