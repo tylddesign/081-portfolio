@@ -17,4 +17,76 @@
         margin: 0 auto;
         margin-top: 25px;
     }
+    &__items {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px); // repeat - 4 колонки по 270px
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: minmax(
+            270px,
+            auto
+        ); //grid-auto-row - автоматически создаваемые строки будут минимально 270px, максимально автоматически
+        gap: 13px;
+    }
+    &__item {
+        display: flex;
+        padding: 30px;
+        flex-flow: column;
+        align-items: flex-start;
+        border: solid 1px #000;
+        &-icon {
+            display: flex;
+            align-items: center;
+            min-height: 65px;
+        }
+        &-title {
+            margin-top: 20px;
+        }
+        &-body {
+            margin-bottom: 0;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            text-align: left;
+            color: #000000;
+        }
+    }
+    &__rating {
+        margin-top: 120px;
+        display: grid;
+        grid-template: repeat(2, 70px) / repeat(3, 350px); // grid-template = grid-template-row + grid-template-column
+        gap: 30px 45px;
+        &-item {
+            position: relative;
+            display: grid;
+            grid-template-columns: 250px 100px;
+            grid-template-rows: 36px 14px;
+            //grid-template: 36px 14px / 250px 100px; // объединенные строки выше
+            align-content: space-between; // расстояние по вертикали между ячейками - space-between
+            justify-content: space-between; // расстояние по горизонтали между ячейками - space-between
+            //place-content: space-between space-between; // place-content = align-content + justify-content
+        }
+        &-title {
+            @include before_circle;
+        }
+        &-counter {
+            justify-self: end; // контент внутри ячейки прибился в конце
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+        }
+        &-line {
+            height: 14px;
+            background: #e8e4de;
+            border-radius: 4px;
+            grid-column: 1 / 3;
+            span {
+                display: block;
+                height: 100%;
+                background: $main-color;
+                border-radius: 4px;
+            }
+        }
+    }
 }
