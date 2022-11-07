@@ -1,0 +1,175 @@
+@media (max-width: 1440px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    // .about {
+    //     &__wrapper {
+    //         grid-template-columns: 400px 520px;
+    //         column-gap: 40px;
+    //     }
+    //     &__text {
+    //     }
+    //     &__skills {
+    //         grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+    //         column-gap: 20px;
+    //         &-item {
+    //             grid-template-columns: 40px 195px;
+    //             column-gap: 15px;
+    //         }
+    //     }
+    // }
+    .about {
+        &__wrapper {
+            grid-template-columns: 400px 520px;
+            column-gap: 40px;
+        }
+        &__skills {
+            column-gap: 20px;
+            grid-template: repeat(2, minmax(115px, auto)) / repeat(2, 250px);
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 0 10px;
+            grid-template-columns: repeat(2, 400px);
+            column-gap: 140px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .title {
+        &_fz36 {
+            font-size: 30px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: 300px 380px;
+        }
+        &__skills {
+            grid-template-columns: 380px;
+            grid-template-rows: repeat(3, minmax(80px, auto));
+            grid-auto-rows: minmax(80px, auto);
+
+            &-item {
+                grid-template-columns: 40px 320px;
+                column-gap: 20px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            margin-top: 40px;
+            padding: 0 10px;
+            grid-template-columns: repeat(2, 325px);
+            column-gap: 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
+    .about {
+        padding-top: 40px;
+        &__wrapper {
+            grid-template: 340px auto auto / 100%;
+            row-gap: 30px;
+        }
+        &__photo {
+            grid-row: unset;
+        }
+        &__skills {
+            grid-template-columns: repeat(2, 250px);
+            grid-template-rows: repeat(2, minmax(80px, auto));
+            grid-auto-rows: minmax(80px, auto);
+            &-item {
+                grid-template-columns: 40px 195px;
+                column-gap: 15px;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            padding: 0 10px;
+            grid-template-columns: 520px;
+            row-gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .title {
+        &_fz48 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        &_fz36 {
+            font-size: 24px;
+            line-height: 54px;
+        }
+    }
+    .promo {
+        background: url("../img/1-section/Background.jpg") no-repeat 57% / cover;
+        &__title {
+            margin-bottom: 32px;
+        }
+    }
+    .hamburger {
+        top: 30px;
+    }
+    .menu {
+        &__block {
+            width: 250px;
+        }
+        &__list {
+            padding-left: 55px;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template: 340px auto auto / 100%;
+        }
+        &__skills {
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(3, minmax(60px, auto));
+            grid-auto-rows: minmax(60px, auto);
+            &-item {
+                grid-template-columns: 40px auto;
+            }
+        }
+    }
+    .resume {
+        &__wrapper {
+            grid-template-columns: minmax(300px, auto);
+        }
+        &__item-body {
+            min-width: 250px;
+        }
+    }
+}

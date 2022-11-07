@@ -1,5 +1,15 @@
 .about {
     padding-top: 120px;
+    &__1140 {
+        width: 1140px;
+        height: 10px;
+        background-color: red;
+    }
+    &__1200 {
+        width: 1200px;
+        height: 10px;
+        background-color: green;
+    }
     &__wrapper {
         display: grid;
         grid-template-columns: 400px 670px;
@@ -12,6 +22,8 @@
         grid-row: 1/3;
         img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
     &__descr {
@@ -28,7 +40,6 @@
         @include before_circle;
     }
     &__text {
-        width: 570px;
         margin-top: 16px;
         margin-bottom: 0;
         font-weight: 500;
