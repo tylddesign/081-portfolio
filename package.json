@@ -21,5 +21,13 @@
     "gulp-scss": "^1.4.0",
     "sass": "^1.54.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylddesign/081-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tylddesign/081-portfolio/issues"
+  },
+  "homepage": "https://github.com/tylddesign/081-portfolio#readme",
   "description": ""
 }

@@ -45,6 +45,38 @@
             column-gap: 140px;
         }
     }
+    .skills {
+        &__items {
+            grid-template-columns: repeat(auto-fit, 270px);
+            justify-content: center;
+        }
+        &__rating {
+            grid-template: repeat(2, 70px) / repeat(auto-fit, 350px);
+            justify-content: center;
+        }
+    }
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 280px);
+            justify-content: center;
+            .horizontal,
+            .vertical {
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template: repeat(3, minmax(44px, auto)) / repeat(auto-fit, minmax(268px, calc(58% - 100px)));
+            column-gap: 60px;
+            justify-content: center;
+            padding-left: 30px;
+        }
+        &__item {
+            grid-template: auto auto/1fr auto;
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -170,6 +202,19 @@
         }
         &__item-body {
             min-width: 250px;
+        }
+    }
+    .skills {
+        &__rating {
+            grid-template: repeat(2, 70px) / repeat(auto-fit, 300px);
+            &-item {
+                grid-template-columns: 200px 100px;
+            }
+        }
+    }
+    .price {
+        &__wrapper {
+            grid-template: repeat(3, minmax(44px, auto)) / repeat(auto-fit, minmax(268px, auto));
         }
     }
 }
